@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack.in – Learn & Hire Fullstack Talent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?technology,code') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Empowering Fullstack Developers</h1>
+            <p>Learn. Grow. Get Hired. A unified platform for courses, internships, and job opportunities in fullstack
+                development.</p>
+            <a href="#explore" class="btn btn-light btn-lg mt-3">Explore Platform</a>
+        </div>
+    </section>
+
+    <!-- Main Tiles -->
+    <section class="py-5" id="explore">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">Choose Your Path</h2>
+                    <p class="text-muted">We help developers at every stage – learning, career growth, and hiring the
+                        best talent.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- For Students -->
+                <div class="col-md-4">
+                    <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="https://source.unsplash.com/600x400/?coding,students" class="card-img-top"
+                            alt="Students">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">For Students</h5>
+                            <p class="card-text">Enroll in curated fullstack development courses, get certified, and
+                                apply for internships to gain real-world experience.</p>
+                            <a href="/courses" class="btn btn-primary">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Job Seekers -->
+                <div class="col-md-4">
+                    <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="https://source.unsplash.com/600x400/?developer,career" class="card-img-top"
+                            alt="Job Seekers">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">For Job Seekers</h5>
+                            <p class="card-text">Find job openings tailored for fullstack developers, get
+                                interview-ready, and build your career with top companies.</p>
+                            <a href="/jobs" class="btn btn-success">Find Jobs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Employers -->
+                <div class="col-md-4">
+                    <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="https://source.unsplash.com/600x400/?teamwork,hiring" class="card-img-top"
+                            alt="Employers">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">For Employers</h5>
+                            <p class="card-text">Hire top-tier fullstack developers from our certified talent pool. Post
+                                jobs, shortlist candidates, and streamline hiring.</p>
+                            <a href="/hire" class="btn btn-warning text-white">Hire Talent</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Fullstack.in. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

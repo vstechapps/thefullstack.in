@@ -1,0 +1,24 @@
+<section class="pillars-section">
+    <div class="container">
+        <h2 class="section-title">Platform Pillars</h2>
+        <div class="pillars-grid">
+            <div class="pillar-card" *ngFor="let pillar of pillars" [id]="pillar.id">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <span class="icon">{{ pillar.icon }}</span>
+                    </div>
+                    <h3 class="pillar-title">{{ pillar.title }}</h3>
+                    <p class="pillar-subtitle">{{ pillar.subtitle }}</p>
+                    <p class="pillar-description">{{ pillar.description }}</p>
+                    <ul class="pillar-features">
+                        <li *ngFor="let feature of pillar.features">
+                            <span class="check">✓</span> {{ feature }}
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary mt-auto">Explore {{ pillar.title }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

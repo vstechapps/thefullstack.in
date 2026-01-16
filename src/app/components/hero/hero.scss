@@ -1,0 +1,113 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    overflow: hidden;
+
+    &-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+        z-index: -1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(15, 23, 42, 0) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0) 1px, transparent 1px); // Grid effect placeholder
+            background-size: 50px 50px;
+        }
+    }
+
+    &-content {
+        text-align: center;
+        z-index: 1;
+    }
+
+    &-title {
+        font-size: 4rem;
+        line-height: 1.1;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+
+        .highlight {
+            color: var(--accent-color);
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+
+    &-subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-actions {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    &-stats {
+        display: inline-flex;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem 3rem;
+        border-radius: 16px;
+        gap: 3rem;
+
+        .divider {
+            width: 1px;
+            background: var(--border-color);
+            height: 40px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+
+            .stat-value {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--text-primary);
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1.5rem;
+
+            .divider {
+                display: none;
+            }
+        }
+    }
+}
