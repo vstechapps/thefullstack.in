@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class AppComponent {
-  title = 'thefullstack';
+  title = 'The Fullstack';
 }

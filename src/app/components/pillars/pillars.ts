@@ -20,15 +20,6 @@ export class PillarsComponent {
       color: 'from-blue-500 to-cyan-500' // Tailwind-ish logic, but using SCSS variables
     },
     {
-      id: 'prove',
-      icon: '🏆',
-      title: 'Prove',
-      subtitle: 'For Developers',
-      description: 'Demonstrate your capabilities through practical assessments and challenges.',
-      features: ['Project-based proof', 'Skill confidence levels', 'No theory-only exams'],
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
       id: 'hire',
       icon: '🤝',
       title: 'Hire',
@@ -41,7 +32,7 @@ export class PillarsComponent {
       id: 'work',
       icon: '💼',
       title: 'Work',
-      subtitle: 'Freelancing & Collaboration',
+      subtitle: 'Freelance Projects',
       description: 'Access skill-matched freelance opportunities and build your reputation.',
       features: ['Real delivery reputation', 'Safer collaboration', 'Skill-matched projects'],
       color: 'from-orange-500 to-yellow-500'
