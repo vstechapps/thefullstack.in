@@ -12,8 +12,9 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <button class="btn btn-secondary">Login</button>
+            <button class="btn btn-secondary" (click)="openLoginModal()">Login</button>
             <button class="btn btn-primary">Get Started</button>
         </div>
     </div>
+    <app-login *ngIf="showLoginModal" (close)="closeLoginModal()"></app-login>
 </header>
