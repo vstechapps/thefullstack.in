@@ -1,2 +1,0 @@
-# thefullstack.in
-thefullstack.in
